@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:layout_height="match_parent"
+    tools:context=".Qr_WebsiteView">
+<WebView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.08"
+    android:layout_marginBottom="0dp"
+    android:id="@+id/Hare_Krishna"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:textColor="#fff"
+    android:background="@drawable/button_with_border"
+    android:text="Back To Qr Scanner"
+    android:id="@+id/simon_goback"/>
+</LinearLayout>

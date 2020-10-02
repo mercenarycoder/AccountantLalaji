@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">GST Billing App - Accountant Lalaji</string>
+
+    <string name="auth_key">sujeet@#$%999drv$#@%!^se44vwx35v</string>
+
+    <string name="admin_login">https://express.accountantlalaji.com/api/lalaji/admin_login</string>
+    <string name="saledata">https://express.accountantlalaji.com/api/lalaji/sale_details</string>
+    <string name="purchasedata">https://express.accountantlalaji.com/api/lalaji/purchase_details</string>
+    <string name="newcustomer">https://express.accountantlalaji.com/api/lalaji/newcustomer</string>
+    <string name="order">https://express.accountantlalaji.com/api/lalaji/order</string>
+    <string name="porder">https://express.accountantlalaji.com/api/lalaji/order_purchase</string>
+
+    <string name="sale_list">https://express.accountantlalaji.com/api/lalaji/sale_list_pagination</string>
+    <string name="sale_list_today">https://express.accountantlalaji.com/api/lalaji/sale_list_pagination_today</string>
+    <string name="sale_list_yesterday">https://express.accountantlalaji.com/api/lalaji/sale_list_pagination_yesterday</string>
+
+    <string name="purchase_list">https://express.accountantlalaji.com/api/lalaji/purchase_list_pagination</string>
+    <string name="purchase_list_today">https://express.accountantlalaji.com/api/lalaji/purchase_list_pagination_today</string>
+    <string name="purchase_list_yesterday">https://express.accountantlalaji.com/api/lalaji/purchase_list_pagination_yesterday</string>
+
+    <string name="sale_report">https://express.accountantlalaji.com/api/lalaji/sale_report</string>
+    <string name="report_data">https://express.accountantlalaji.com/api/lalaji/report_data</string>
+
+    <string name="customer_list">https://express.accountantlalaji.com/api/lalaji/customer_list</string>
+    <string name="state">https://express.accountantlalaji.com/api/lalaji/state</string>
+    <string name="itemCate">https://express.accountantlalaji.com/api/lalaji/item_cate_list</string>
+    <string name="hsnList">https://express.accountantlalaji.com/api/lalaji/hsn_list</string>
+    <string name="accList">https://express.accountantlalaji.com/api/lalaji/account_list</string>
+    <string name="annList">https://express.accountantlalaji.com/api/lalaji/announcement</string>
+    <string name="drawer_data">https://express.accountantlalaji.com/api/lalaji/drawer_data</string>
+    <string name="newhsn">https://express.accountantlalaji.com/api/lalaji/new_hsn</string>
+    <string name="hsn_edit">https://express.accountantlalaji.com/api/lalaji/hsn_edit</string>
+    <string name="newcate">https://express.accountantlalaji.com/api/lalaji/new_cate</string>
+    <string name="acctype">https://express.accountantlalaji.com/api/lalaji/account_type</string>
+    <string name="newAccount">https://express.accountantlalaji.com/api/lalaji/new_account</string>
+    <string name="account_edit">https://express.accountantlalaji.com/api/lalaji/account_edit</string>
+    <string name="newProduct">https://express.accountantlalaji.com/api/lalaji/new_product</string>
+    <string name="editproduct">https://express.accountantlalaji.com/api/lalaji/editproduct.php</string>
+    <string name="account">https://express.accountantlalaji.com/api/lalaji/account_view</string>
+    <string name="customerDelete">https://express.accountantlalaji.com/api/lalaji/customer_delete</string>
+    <string name="productDelete">https://express.accountantlalaji.com/api/lalaji/product_delete</string>
+    <string name="productSold">https://express.accountantlalaji.com/api/lalaji/product_sold</string>
+    <string name="brandDelete">https://express.accountantlalaji.com/api/lalaji/brand_delete</string>
+    <string name="accountDelete">https://express.accountantlalaji.com/api/lalaji/account_delete</string>
+
+    <string name="profile">https://express.accountantlalaji.com/api/lalaji/profile</string>
+    <string name="profile_update">https://express.accountantlalaji.com/api/lalaji/profile_update</string>
+
+    <string name="companyLogo">https://express.accountantlalaji.com/assets/staff/img/</string>
+    <string name="productLogo">https://express.accountantlalaji.com/assets/modelImage/</string>
+
+    <string name="changepassword">https://express.accountantlalaji.com/api/lalaji/changepassword.php/</string>
+
+    <string name="changebrand">https://express.accountantlalaji.com/api/lalaji/editcategory.php/</string>
+
+    <string name="call">Give us a Call between\n
+    11:00 AM to 07:00 PM\n
+    +91 930 013 1492\n
+    +91 62 66 77 6418\n
+    gstbillingindia@gmail.com</string>
+
+
+    <string name="title_activity_customer__list">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+</resources>

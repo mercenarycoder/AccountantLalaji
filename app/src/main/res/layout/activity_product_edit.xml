@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product_edit">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/backProduct"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/back"
+                android:tint="#ffffff"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="0dp"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/backProduct"
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserratalternates_medium"
+                android:gravity="center"
+                android:text="Edit Product"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/menu"
+                android:src="@mipmap/cube"
+                android:tint="#ffffff"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/toolbarProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/ProNameET1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Name *"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Select Image"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@+id/proImage"
+                    />
+
+                <ImageView
+                    android:id="@+id/proImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/photo"
+                    />
+
+            </RelativeLayout>
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/ProCateName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Category Name *"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelText="Category"
+                app:met_floatingLabelTextColor="#ffffff"
+                app:met_floatingLabelTextSize="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                >
+
+            </com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner>
+
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/ProHSNCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select HSN Code *"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelText="HSN Code"
+                app:met_floatingLabelTextColor="#ffffff"
+                app:met_floatingLabelTextSize="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                >
+
+            </com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner>
+
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/ProUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Unit Name *"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelText="Unit Name"
+                app:met_floatingLabelTextColor="#ffffff"
+                app:met_floatingLabelTextSize="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                >
+            </com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner>
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/ProCast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Cast Name *"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelText="Cast Name"
+                app:met_floatingLabelTextColor="#ffffff"
+                app:met_floatingLabelTextSize="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                >
+            </com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/ProSpeciET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Specifications"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/ProMOPET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="M.O.P ( Selling Price ) *"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/mopView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/ProPPET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="P.P ( Purchase Price ) *"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/ppView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/profitView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/ProBarcodeET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Barcode"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/ProStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Status *"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelText="Status"
+                app:met_floatingLabelTextColor="#ffffff"
+                app:met_floatingLabelTextSize="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="100dp"
+                >
+            </com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/proSubmitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:theme="@style/PrimaryButton"
+        />
+
+
+
+</RelativeLayout>

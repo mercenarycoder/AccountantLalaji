@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardViewBrand"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+            <TextView
+                android:id="@+id/brandName"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Brand Name"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:fontFamily="@font/montserratalternates_medium"
+                android:textSize="12dp"
+                />
+            <TextView
+                android:id="@+id/brandStatus"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Status"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:fontFamily="@font/montserratalternates_medium"
+                android:textSize="12dp"
+                />
+
+            <ImageView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/eye"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/colorPrimary"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4a4a4a"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.1"
+            ></View>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

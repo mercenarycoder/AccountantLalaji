@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayoutSaleList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_color"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:visibility="visible">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+
+            android:id="@+id/profile"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="0dp"
+            android:src="@mipmap/user"
+            android:tint="#ffffff" />
+
+        <ImageView
+
+            android:id="@+id/support"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/profile"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="0dp"
+            android:src="@mipmap/exclamation"
+            android:tint="#ffffff" />
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_toRightOf="@+id/support"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="0dp"
+            android:src="@mipmap/settings2"
+            android:tint="#ffffff" />
+
+
+
+
+        <ImageView
+            android:id="@+id/dmenuback"
+
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="0dp"
+            android:src="@mipmap/back"
+            android:tint="#ffffff" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:visibility="gone"
+                    android:id="@+id/cmp_logooo"
+                    android:layout_width="280dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/cmp_nameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserratalternates_medium"
+                    android:gravity="center"
+                    android:text="VIAS GROUP"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:src="@drawable/asset2"
+                    android:scaleType="fitXY"
+
+                    />
+
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.3"
+                    android:background="#ffffff"></View>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="9">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/dmenu_totalSale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            android:gravity="center"
+                            android:text="201"
+                            android:textColor="#FBFE00"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            android:gravity="center"
+                            android:text="Today's sale"
+                            android:textColor="#FBFE00"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/dmenu_totalSaleAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            android:gravity="center"
+                            android:text="15862"
+                            android:textColor="#FBFE00"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            android:gravity="center"
+                            android:text="Today's Sale Amount"
+                            android:textColor="#FBFE00"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/dmenu_totalStock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            android:gravity="center"
+                            android:text="520"
+                            android:textColor="#FBFE00"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            android:gravity="center"
+                            android:text="Item Count"
+                            android:textColor="#FBFE00"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="0dp"
+                            android:paddingTop="20dp"
+                            android:orientation="horizontal"
+                            android:weightSum="9">
+
+                            <LinearLayout
+                                android:id="@+id/dmenu_saleLL"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:orientation="horizontal"
+                                android:foreground="@drawable/ripple_rectangle"
+
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:src="@mipmap/shoppingcart"
+                                        android:tint="#ffffff" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/montserratalternates_medium"
+                                        android:gravity="center"
+                                        android:text="Sale"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="10dp"
+                                        android:alpha="0.3"
+                                        android:background="#ffffff"></View>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:alpha="0.3"
+                                android:background="#ffffff">
+
+                            </View>
+
+                            <LinearLayout
+                                android:foreground="@drawable/ripple_rectangle"
+                                android:id="@+id/dmenu_purchaseLL"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/wallet1"
+                                    android:tint="#ffffff" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/montserratalternates_medium"
+                                    android:gravity="center"
+                                    android:text="Purchase"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10dp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="10dp"
+                                    android:alpha="0.3"
+                                    android:background="#ffffff"></View>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:alpha="0.3"
+                                android:background="#ffffff"></View>
+
+                            <LinearLayout
+                                android:foreground="@drawable/ripple_rectangle"
+                                android:id="@+id/dmenu_contactLL"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/phonebook"
+                                    android:tint="#ffffff" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/montserratalternates_medium"
+                                    android:gravity="center"
+                                    android:text="Contact"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10dp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_marginTop="10dp"
+                                    android:alpha="0.3"
+                                    android:background="#ffffff"></View>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="0dp"
+                            android:orientation="horizontal"
+                            android:weightSum="9">
+
+                            <LinearLayout
+                                android:foreground="@drawable/ripple_rectangle"
+                                android:id="@+id/dmenu_productLL"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:layout_weight="3"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/cube"
+                                    android:tint="#ffffff" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/montserratalternates_medium"
+                                    android:gravity="center"
+                                    android:text="Products"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10dp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="10dp"
+                                    android:alpha="0.3"
+                                    android:background="#ffffff"></View>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="0dp"
+                                android:alpha="0.3"
+                                android:background="#ffffff"></View>
+
+                            <LinearLayout
+                                android:foreground="@drawable/ripple_rectangle"
+                                android:id="@+id/dmenu_hsntLL"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:layout_weight="3"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/percentage"
+                                    android:tint="#ffffff" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/montserratalternates_medium"
+                                    android:gravity="center"
+                                    android:text="HSN /  SAC"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10dp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="10dp"
+                                    android:alpha="0.3"
+                                    android:background="#ffffff"></View>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="0dp"
+                                android:alpha="0.3"
+                                android:background="#ffffff"></View>
+
+                            <LinearLayout
+                                android:foreground="@drawable/ripple_rectangle"
+                                android:id="@+id/dmenu_acctLL"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:layout_weight="3"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/account"
+                                    android:tint="#ffffff" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/montserratalternates_medium"
+                                    android:gravity="center"
+                                    android:text="Account"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10dp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_marginTop="10dp"
+                                    android:alpha="0.3"
+                                    android:background="#ffffff"></View>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="0dp"
+                            android:orientation="horizontal"
+                            android:weightSum="9">
+
+                            <LinearLayout
+                                android:foreground="@drawable/ripple_rectangle"
+                                android:id="@+id/dmenu_reporttLL"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:layout_weight="3"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/diagram"
+                                    android:tint="#ffffff" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/montserratalternates_medium"
+                                    android:gravity="center"
+                                    android:text="Reports"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:alpha="0.3"
+                                android:background="#ffffff"></View>
+
+                            <LinearLayout
+
+             android:foreground="@drawable/ripple_rectangle"
+                                android:id="@+id/qr_code_scanner"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:layout_weight="3"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/qr_scanner"
+                                    android:tint="#ffffff" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/montserratalternates_medium"
+                                    android:gravity="center"
+                                    android:text="QR Scanner"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:alpha="0.3"
+                                android:background="#ffffff"></View>
+
+                            <LinearLayout
+                                android:foreground="@drawable/ripple_rectangle"
+                                android:layout_width="0dp"
+                                android:id="@+id/expenses_LL"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:layout_weight="3"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/expenses"
+                                    android:tint="#ffffff" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/montserratalternates_medium"
+                                    android:gravity="center"
+                                    android:text="Expenses"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        android:text="Login as : "
+                        android:textColor="#FBFE00" />
+
+                    <TextView
+                        android:id="@+id/loginAsTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        android:text="Subadmin"
+                        android:textColor="#FBFE00"
+
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   android:gravity="center"
+                >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/dmenu_supporttLL"
+                        android:layout_gravity="start"
+                        android:src="@mipmap/headphones"
+                        android:tint="#ffffff"
+                        android:layout_marginRight="40dp"/>
+
+                    <ImageView
+                        android:id="@+id/facebookImg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/facebook128"
+                        android:padding="10dp"
+                        android:layout_gravity="start"
+                        android:tint="#ffffff"
+                        />
+                    <ImageView
+                        android:id="@+id/messengerImg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/messenger128"
+                        android:padding="10dp"
+                        android:tint="#ffffff"
+
+                        />
+                    <ImageView
+                        android:id="@+id/whatsappImg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/whatsapp"
+                        android:padding="10dp"
+                        android:tint="#ffffff"
+                        />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="40dp"
+                        android:padding="0dp"
+                        android:id="@+id/dmenu_logouttLL"
+                        android:src="@mipmap/logout"
+                        android:tint="#ffffff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linkLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        android:gravity="center"
+                        android:text="Billing Solution By :"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp" />
+
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/whitelogo" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayoutSaleList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Purchase_List">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarSaleList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_color"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Purchase List"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserratalternates_medium"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:tint="#ffffff"
+                    android:src="@mipmap/wallet1"
+                    android:layout_toRightOf="@+id/menu"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:id="@+id/scrollViewPurchase"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbarSaleList">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@id/ss"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:background="#ffffff"
+                    android:id="@+id/ss"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    >
+
+                    <ImageView
+                        android:id="@+id/sale_list_left"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="25dp"
+                        android:tint="#BDC3C7"
+                        android:src="@mipmap/left"/>
+
+                    <LinearLayout
+                        android:layout_weight="6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/salelist_dayTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today"
+                            android:textAllCaps="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+                            <ImageView
+                                android:layout_marginTop="2dp"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/rupee"
+                                android:layout_gravity="center"
+                                android:tint="#7F8C8D"
+                                />
+                            <TextView
+                                android:id="@+id/today_total_amountTV"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0000"
+                                android:textSize="30dp"
+                                android:textColor="#7F8C8D"
+                                android:fontFamily="@font/montserratalternates_medium"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#7F8C8D"
+                                android:text="TOTAL BILLS : "
+                                android:fontFamily="@font/montserratalternates_medium"
+                                />
+                            <TextView
+                                android:id="@+id/today_total_billTV"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00"
+                                android:textColor="#7F8C8D"
+                                android:fontFamily="@font/montserratalternates_medium"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/sale_list_right"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="25dp"
+                        android:tint="#BDC3C7"
+                        android:src="@mipmap/right"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/account"
+                    android:layout_below="@+id/toolbarAccountList"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:weightSum="10"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:text="Bill No."
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000000"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:text="Name"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:text="Amount"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:alpha="0.3"
+                    android:layout_height="1dp"
+                    android:background="#4a4a4a">
+
+                </View>
+
+            </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/ss"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="No Record Fount"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+
+                            />
+
+
+                        <android.support.v7.widget.RecyclerView
+
+                            android:id="@+id/recyclerView_SaleList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+                            android:nestedScrollingEnabled="false"
+                            android:paddingBottom="0dp">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/purchaseViewMore"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            android:text="View More..."
+                            android:gravity="end|center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginBottom="50dp"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffedf5"
+            android:orientation="horizontal"
+            android:weightSum="11">
+
+            <LinearLayout
+                android:id="@+id/ptab_salelistLL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/shoppingcart"
+                    android:tint="#da3c78"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ptab_productlistLL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/cube"
+                    android:tint="#da3c78"
+                    android:layout_gravity="center"
+
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ptab_contactlistLL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/phonebook"
+                    android:tint="#da3c78"
+                    android:layout_gravity="center"
+
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ptab_reportlistLL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/diagram"
+                    android:tint="#da3c78"
+                    android:layout_gravity="center"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/purchase_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_with_border"
+            android:text="+"
+            android:textColor="#fff"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view_SaleList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginEnd="-65dp"
+        android:layout_marginRight="-65dp"
+        android:fitsSystemWindows="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <include
+                    android:id="@+id/dm"
+                    layout="@layout/drawer_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></include>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+

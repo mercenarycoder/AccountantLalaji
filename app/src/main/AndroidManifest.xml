@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vias.accountantlalaji">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity_NewQr"></activity>
+        <activity android:name=".ExtraQrScanner" />
+        <activity android:name=".Qr_WebsiteView" />
+        <activity android:name=".Expenses_Activity" />
+        <activity android:name=".TicketView" />
+        <activity android:name=".Qr_scanner" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Login"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Sale" />
+        <activity android:name=".ScanActivity" />
+        <activity
+            android:name=".Bill"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Sale_List" />
+        <activity android:name=".Purchase_List" />
+        <activity
+            android:name=".Product_List"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Purchase" />
+        <activity
+            android:name=".Product"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Customer_List"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Vendor_List" />
+        <activity
+            android:name=".Report"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".HSN_List" />
+        <activity android:name=".Account_List" />
+        <activity android:name=".Support" />
+        <activity android:name=".BillShow" />
+        <activity android:name=".Customer_View" />
+        <activity android:name=".Product_View" />
+        <activity android:name=".Brand_view" />
+        <activity android:name=".Account_view" />
+        <activity android:name=".BillView" />
+        <activity android:name=".HSN_view" />
+        <activity
+            android:name=".Bill_Purhase"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Profile"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Setting" />
+        <activity android:name=".BillView_purhase" />
+        <activity android:name=".WebView" />
+        <activity android:name=".Product_edit" />
+    </application>
+
+</manifest>

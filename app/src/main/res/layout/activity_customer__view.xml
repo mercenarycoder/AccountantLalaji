@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer_View">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarCustomerView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/menu_tab_salelist"
+        >
+
+        <!--android:background="#b93085"-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/backCustomer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/back"
+                android:tint="#ffffff"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="0dp"
+                />
+
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/customerDelete"
+                android:layout_alignParentRight="true"
+                android:layout_width="50dp"
+                android:padding="15dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/delete"
+                android:layout_marginRight="0dp"
+                android:tint="#ffffff"
+
+                />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/customerEdit"
+                android:layout_width="50dp"
+                android:padding="15dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/customerDelete"
+                android:src="@mipmap/edit"
+                android:tint="#ffffff"
+
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_below="@+id/toolbarCustomerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@drawable/menu_tab_salelist"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/cv_customerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name"
+                    android:gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/montserratalternates_medium"
+                    />
+
+                <TextView
+                    android:id="@+id/cv_customerMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8652893148"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/montserratalternates_medium"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:background="#ffedf5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/menu_tab_salelist"
+                    ></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:weightSum="12"
+                    android:background="@drawable/circle"
+                    >
+
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="2.5dp"
+                            android:id="@+id/cv_totalAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 5000"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#4a4a4a"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total"
+                            android:textSize="8dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#4a4a4a"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_marginLeft="2.5dp"
+                            android:layout_marginRight="2.5dp"
+                            android:id="@+id/cv_paidAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 4000"
+                            android:textSize="12dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="#4a4a4a"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paid"
+                            android:textSize="8dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#4a4a4a"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_marginLeft="2.5dp"
+                            android:layout_marginRight="2.5dp"
+                            android:id="@+id/cv_duesAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 1000"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#4a4a4a"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dues"
+                            android:textSize="8dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#4a4a4a"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_marginLeft="2.5dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/cv_availableAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 556"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#4a4a4a"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Available"
+                            android:textSize="8dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#4a4a4a"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:background="#ffedf5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="55dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Email "
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/montserratalternates_medium"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_customerEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:text=": sujeetgmail.com"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a4a4a"
+                    android:alpha="0.1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    ></View>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:text="Shipping Address "
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratalternates_medium"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_customerShippingAddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text=": Zone 1, Bhopal"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a4a4a"
+                    android:alpha="0.1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    ></View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:text="Billing Address "
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratalternates_medium"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_customerBillingAddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text=": Zone 1, Bhopal, MP"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a4a4a"
+                    android:alpha="0.1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    ></View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:text="GST "
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratalternates_medium"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_customerGST"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text=": 86568451651365"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a4a4a"
+                    android:alpha="0.1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    ></View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:text="Business Name "
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratalternates_medium"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_customerBusinessName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text=": Mobile Shop"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a4a4a"
+                    android:alpha="0.1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    ></View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:text="PinCode "
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratalternates_medium"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_customerPinCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text=": 462016"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a4a4a"
+                    android:alpha="0.1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    ></View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:text="Account Name "
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratalternates_medium"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_customerAccountName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text=": State Bank"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a4a4a"
+                    android:alpha="0.1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    ></View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:text="Account Number "
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratalternates_medium"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_customerAccountNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text=": 456625222010001"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a4a4a"
+                    android:alpha="0.1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    ></View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:text="Bank IFSC Code "
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratalternates_medium"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_customerIFSCCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text=": SBI00158"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a4a4a"
+                    android:alpha="0.1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    ></View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratalternates_medium"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_customerStatus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text=": Active"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/productNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:singleLine="true"
+
+                />
+
+            <TextView
+                android:id="@+id/p_brandnameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brand"
+                android:layout_below="@+id/productNameTV"
+                android:textSize="11dp"
+                android:layout_marginTop="1dp"
+                />
+
+
+            <TextView
+                android:id="@+id/p_barcodeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/p_brandnameTV"
+                android:text="barcodeTV"
+                android:layout_below="@+id/productNameTV"
+                android:textSize="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                />
+
+
+            <LinearLayout
+                android:padding="5dp"
+                android:id="@+id/gst"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:weightSum="9"
+                android:layout_below="@+id/p_barcodeTV"
+                >
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Base Price"/>
+
+                    <TextView
+                        android:id="@+id/p_priceTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Quantity"/>
+
+                    <TextView
+                        android:id="@+id/item_count2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="000"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="GST"/>
+
+                    <TextView
+                        android:id="@+id/gstTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Taxable"/>
+
+                    <TextView
+                        android:id="@+id/taxTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="000"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Amount"/>
+
+                    <TextView
+                        android:id="@+id/amountTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/disLL"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/gst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <EditText
+                    android:id="@+id/dis_ET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:hint="Discount"
+                    android:layout_below="@+id/p_barcodeTV"
+                    android:layout_toRightOf="@+id/p_priceTV"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="0dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+
+                    />
+
+                <Button
+                    android:id="@+id/dis_apply_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:textSize="8dp"
+                    android:layout_toRightOf="@+id/dis_ET"
+                    android:layout_below="@+id/p_barcodeTV"
+                    android:textAllCaps="false"
+                    android:text="Apply"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/countRL"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/gst"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/item_minus_Btn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:paddingTop="7dp"
+                    android:layout_toLeftOf="@+id/item_count"
+                    android:text="-"/>
+                <TextView
+                    android:id="@+id/item_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:layout_toLeftOf="@+id/item_plus_Btn"
+                    android:text="0"/>
+
+                <Button
+                    android:id="@+id/item_plus_Btn"
+                    android:layout_width="35dp"
+                    android:paddingTop="7dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="35dp"
+                    android:text="+"/>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/p_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/xbutton"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+
+                />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginRight="-5dp"
+            ></View>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/loginRL"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/b1"
+        android:scaleType="centerCrop"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/logoo"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/gicon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Are you Looking to use this App ?"
+                    android:fontFamily="@font/montserratalternates_medium"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/u_signupBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="New Registration"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/montserratalternates_medium"
+                    android:theme="@style/PrimaryButton"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="For Any Support or Sale Enquiry"
+                    android:fontFamily="@font/montserratalternates_medium"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/callTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Call : +91-7987 31 52 56"
+                    android:fontFamily="@font/montserratalternates_medium"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/websiteTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="www.accountantlalaji.com"
+                    android:fontFamily="@font/montserratalternates_medium"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/below"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="290dp">
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/userLoginLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="310dp"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Admin Login"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#4a4a4a"
+                            android:alpha="0.2"
+                            android:layout_marginTop="10dp"
+                            ></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/user3"
+                                android:layout_marginTop="7dp"
+                                android:tint="#7F8C8D"
+
+                                />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="9"
+                                >
+
+                                <EditText
+                                    android:id="@+id/u_id_et"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="@font/montserratalternates_medium"
+                                    android:hint="admin id"
+                                    android:inputType="textEmailAddress" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_marginTop="10dp"
+
+                            >
+
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/padlock"
+                                android:layout_marginTop="7dp"
+                                android:tint="#7F8C8D"
+                                />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="9"
+                                >
+
+                                <EditText
+                                    android:id="@+id/u_pass_et"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:hint="password"
+                                    android:fontFamily="@font/montserratalternates_medium"
+                                    android:inputType="textPassword"
+                                    />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            >
+
+
+                            <Button
+                                android:layout_weight="5"
+                                android:id="@+id/userLoginBtn"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="Login"
+                                android:fontFamily="@font/montserratalternates_medium"
+                                android:textAllCaps="true"
+                                android:theme="@style/PrimaryButtonGreen"
+                                />
+
+
+                            <Button
+                                android:layout_weight="5"
+                                android:id="@+id/signupBtn"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="Sign Up"
+                                android:textAllCaps="true"
+                                android:fontFamily="@font/montserratalternates_medium"
+                                android:theme="@style/PrimaryButton2"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/skip"
+                            android:layout_width="match_parent"
+                            android:layout_height="61dp"
+                            android:layout_below="@+id/below"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:id="@+id/adminLoginTV"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="end"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="5.2"
+                                android:fontFamily="@font/montserratalternates_medium"
+                                android:gravity="center"
+                                android:text="User Login"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="15dp"
+                                android:alpha="0.2"
+                                android:background="#4a4a4a"></View>
+
+                            <TextView
+                                android:id="@+id/skipTV"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="start"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="4.5"
+                                android:fontFamily="@font/montserratalternates_medium"
+                                android:gravity="center"
+                                android:text="Skip"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:id="@+id/adminLoginLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="290dp"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User Login"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/montserratalternates_medium"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#4a4a4a"
+                            android:alpha="0.2"
+                            android:layout_marginTop="10dp"
+                            ></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/user3"
+                                android:layout_marginTop="7dp"
+                                android:tint="#7F8C8D"
+
+                                />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="9"
+                                >
+
+                                <EditText
+                                    android:id="@+id/a_id_et"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="@font/montserratalternates_medium"
+                                    android:hint="user id"
+                                    android:inputType="textEmailAddress" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_marginTop="10dp"
+
+                            >
+
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/padlock"
+                                android:layout_marginTop="7dp"
+                                android:tint="#7F8C8D"
+                                />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="9"
+                                >
+
+                                <EditText
+                                    android:id="@+id/a_pass_et"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:hint="password"
+                                    android:fontFamily="@font/montserratalternates_medium"
+                                    android:inputType="textPassword"
+                                    />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            >
+
+                            <Button
+                                android:layout_weight="10"
+                                android:id="@+id/adminLoginBtn"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="Login"
+                                android:fontFamily="@font/montserratalternates_medium"
+                                android:textAllCaps="true"
+                                android:theme="@style/PrimaryButtonGreen"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="61dp"
+                            android:layout_below="@+id/below"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="10">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="15dp"
+                                android:alpha="0.2"
+                                android:background="#4a4a4a"></View>
+
+                            <TextView
+                                android:id="@+id/skipTV2"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="start"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="4.5"
+                                android:fontFamily="@font/montserratalternates_medium"
+                                android:gravity="center"
+                                android:text="Visit Website"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ship"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:layout_below="@+id/below"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="60dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/montserratalternates_medium"
+                        android:text="Beta Version 4.0.1"
+                        android:textColor="#7F8C8D"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/userLoginTV"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/montserratalternates_medium"
+        android:gravity="center"
+        android:text="Qr Scanner"
+       android:drawableTint="#fff"
+        android:drawableRight="@drawable/qr_scanner"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+</RelativeLayout>

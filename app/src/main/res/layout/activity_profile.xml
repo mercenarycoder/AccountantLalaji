@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarProfileView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/menu_tab_salelist"
+        >
+
+        <!--android:background="#b93085"-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/backProfileView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/back"
+                android:tint="#ffffff"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="0dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Profile View"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_toRightOf="@+id/backProfileView"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/toolbarProfileView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/user1"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Company"
+                        android:textSize="12dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <EditText
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:id="@+id/pCompanyET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Company"
+                        android:minHeight="45dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/border_2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/user1"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Store"
+                        android:textSize="12dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <EditText
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:id="@+id/pStoreET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Store"
+                        android:minHeight="45dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/border_2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/user"
+                        android:layout_gravity="center"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textSize="12dp"
+                            android:paddingLeft="10dp"
+                            android:layout_marginBottom="5dp"
+                            />
+                        <EditText
+                            android:id="@+id/pNameET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="45dp"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/border_2"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:hint="Name"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/user1"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Role"
+                        android:textSize="12dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <EditText
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:id="@+id/pRoleET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Role"
+                        android:minHeight="45dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/border_2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/mail"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textSize="12dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <EditText
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:id="@+id/pEmailET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:minHeight="45dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/border_2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/padlock"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textSize="12dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <EditText
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:id="@+id/pPasswordET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:minHeight="45dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/border_2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        />
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Change"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/changePassRL"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/montserratalternates_medium"
+                    android:gravity="center_vertical"
+                    android:text="Change Password"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginLeft="65dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/smartphone1"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile"
+                        android:textSize="12dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/pMobileET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile"
+                        android:minHeight="45dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/border_2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/placeholder1"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textSize="12dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/pAddressET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Address"
+                        android:minHeight="45dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/border_2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/placeholder1"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="State"
+                        android:textSize="12dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/pStateET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="State"
+                        android:minHeight="45dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/border_2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/placeholder1"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="City"
+                        android:textSize="12dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/pCityET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="City"
+                        android:minHeight="45dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/border_2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="70dp"
+                >
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/profileEditSubmitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:theme="@style/PrimaryButton"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSetting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/menu_tab_salelist">
+
+        <!--android:background="#b93085"-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/backSetting"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:src="@mipmap/back"
+                android:tint="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/backSetting"
+                android:gravity="center_vertical"
+                android:text="Setting"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarSetting">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratalternates_medium"
+                android:text="For setting login to your admin panel via app or web"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/userLoginTV"
+                android:layout_width="wrap_content"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/montserratalternates_medium"
+                android:gravity="center"
+                android:text="Admin Login"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

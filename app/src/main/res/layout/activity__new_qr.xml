@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_NewQr">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSaleList"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/toolbar_color">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="45dp">
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/toolbar_color"
+    android:src="@drawable/ic_arrow_back_black_24dp"
+    android:id="@+id/go_back_login"
+    android:tint="#fff"/>
+            <TextView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserratalternates_medium"
+                android:gravity="center"
+               android:layout_marginLeft="10dp"
+                android:text="QR Scanner"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <fragment
+        android:id="@+id/barcode_scanner2"
+        android:name="info.androidhive.barcode.BarcodeReader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:auto_focus="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="50dp"
+        app:use_flash="false" />
+    <info.androidhive.barcode.ScannerOverlay
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#44000000"
+        app:line_color="#7323DC"
+        app:line_speed="6"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="50dp"
+        app:line_width="4"
+        app:square_height="200"
+        app:square_width="200" />
+
+</RelativeLayout>
